@@ -11,6 +11,9 @@ if os_names.include?('ubuntu')
     elsif os_versions.include?('jammy')
         Autoproj.message ("Load ros2 osdeps with the suffix 'jammy'")
         Autoproj.workspace.osdep_suffixes << 'jammy'
+    elsif os_versions.include?('noble')
+        Autoproj.message ("Load ros2 osdeps with the suffix 'noble'")
+        Autoproj.workspace.osdep_suffixes << 'noble'
     else
         Autoproj.error("Unsupported ubuntu version #{is_versions}")
     end

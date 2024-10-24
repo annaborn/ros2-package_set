@@ -11,3 +11,9 @@
           id: ""
         - type: repo
           repo: deb http://packages.ros.org/ros2/ubuntu jammy main
+    - noble:
+        - type: key
+          url: https://raw.githubusercontent.com/ros/rosdistro/master/ros.key
+          id: ""
+        - type: repo
+          repo: deb http://packages.ros.org/ros2/ubuntu noble main
